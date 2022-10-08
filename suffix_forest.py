@@ -1,3 +1,6 @@
+from lib2to3.pgen2.token import NEWLINE
+
+
 def get_all_suffix(arr, leaf_obj):
     all_suffix = []
 
@@ -105,3 +108,7 @@ if __name__ =='__main__':
 
     from printing_util import generate_forest_image
     generate_forest_image(forest, "forest.png")
+
+    from json import dumps
+    with open("forest.json", "w") as outputfile:
+        outputfile.write(dumps(forest, indent=2))

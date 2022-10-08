@@ -1,0 +1,466 @@
+{
+  "3": {
+    "item": 3,
+    "children": [
+      {
+        "item": 14,
+        "children": [
+          {
+            "item": 15,
+            "children": [
+              {
+                "item": 16,
+                "children": [
+                  {
+                    "item": 31,
+                    "children": [],
+                    "leaf": {
+                      "AP": [
+                        "MDM",
+                        "OM"
+                      ],
+                      "GU": [
+                        "MDM"
+                      ],
+                      "OD": [
+                        "MDM"
+                      ],
+                      "ANI": [
+                        "MDM"
+                      ],
+                      "KE": [
+                        "OM"
+                      ]
+                    }
+                  }
+                ],
+                "leaf": null
+              }
+            ],
+            "leaf": null
+          }
+        ],
+        "leaf": null
+      },
+      {
+        "item": 4,
+        "children": [
+          {
+            "item": 5,
+            "children": [
+              {
+                "item": 14,
+                "children": [
+                  {
+                    "item": 15,
+                    "children": [
+                      {
+                        "item": 16,
+                        "children": [
+                          {
+                            "item": 31,
+                            "children": [],
+                            "leaf": {
+                              "AP": [
+                                "OM"
+                              ]
+                            }
+                          }
+                        ],
+                        "leaf": null
+                      }
+                    ],
+                    "leaf": null
+                  }
+                ],
+                "leaf": null
+              }
+            ],
+            "leaf": null
+          }
+        ],
+        "leaf": null
+      }
+    ],
+    "leaf": {
+      "MA": [
+        "OM"
+      ]
+    }
+  },
+  "14": {
+    "item": 14,
+    "children": [
+      {
+        "item": 15,
+        "children": [
+          {
+            "item": 16,
+            "children": [
+              {
+                "item": 31,
+                "children": [],
+                "leaf": {
+                  "AP": [
+                    "MDM",
+                    "OM"
+                  ],
+                  "GU": [
+                    "MDM"
+                  ],
+                  "OD": [
+                    "MDM"
+                  ],
+                  "ANI": [
+                    "MDM"
+                  ],
+                  "KE": [
+                    "OM"
+                  ]
+                }
+              }
+            ],
+            "leaf": null
+          },
+          {
+            "item": 31,
+            "children": [],
+            "leaf": {
+              "OD": [
+                "MDM"
+              ]
+            }
+          }
+        ],
+        "leaf": {
+          "WB": [
+            "OM"
+          ]
+        }
+      }
+    ],
+    "leaf": null
+  },
+  "15": {
+    "item": 15,
+    "children": [
+      {
+        "item": 16,
+        "children": [
+          {
+            "item": 31,
+            "children": [],
+            "leaf": {
+              "AP": [
+                "MDM",
+                "OM"
+              ],
+              "GU": [
+                "MDM"
+              ],
+              "OD": [
+                "MDM"
+              ],
+              "ANI": [
+                "MDM"
+              ],
+              "KE": [
+                "OM"
+              ]
+            }
+          }
+        ],
+        "leaf": null
+      },
+      {
+        "item": 31,
+        "children": [],
+        "leaf": {
+          "OD": [
+            "MDM"
+          ]
+        }
+      }
+    ],
+    "leaf": {
+      "WB": [
+        "OM"
+      ]
+    }
+  },
+  "16": {
+    "item": 16,
+    "children": [
+      {
+        "item": 31,
+        "children": [],
+        "leaf": {
+          "AP": [
+            "MDM",
+            "OM"
+          ],
+          "GU": [
+            "MDM"
+          ],
+          "OD": [
+            "MDM"
+          ],
+          "ANI": [
+            "MDM"
+          ],
+          "KE": [
+            "OM"
+          ]
+        }
+      }
+    ],
+    "leaf": null
+  },
+  "31": {
+    "item": 31,
+    "children": [],
+    "leaf": {
+      "AP": [
+        "MDM",
+        "OM"
+      ],
+      "GU": [
+        "MDM"
+      ],
+      "OD": [
+        "MDM"
+      ],
+      "ANI": [
+        "MDM"
+      ],
+      "KE": [
+        "OM"
+      ]
+    }
+  },
+  "1": {
+    "item": 1,
+    "children": [
+      {
+        "item": 2,
+        "children": [
+          {
+            "item": 3,
+            "children": [
+              {
+                "item": 14,
+                "children": [
+                  {
+                    "item": 15,
+                    "children": [
+                      {
+                        "item": 16,
+                        "children": [
+                          {
+                            "item": 31,
+                            "children": [],
+                            "leaf": {
+                              "GU": [
+                                "MDM"
+                              ]
+                            }
+                          }
+                        ],
+                        "leaf": null
+                      }
+                    ],
+                    "leaf": null
+                  }
+                ],
+                "leaf": null
+              }
+            ],
+            "leaf": null
+          },
+          {
+            "item": 14,
+            "children": [
+              {
+                "item": 15,
+                "children": [
+                  {
+                    "item": 31,
+                    "children": [],
+                    "leaf": {
+                      "OD": [
+                        "MDM"
+                      ]
+                    }
+                  }
+                ],
+                "leaf": null
+              }
+            ],
+            "leaf": null
+          }
+        ],
+        "leaf": null
+      }
+    ],
+    "leaf": null
+  },
+  "2": {
+    "item": 2,
+    "children": [
+      {
+        "item": 3,
+        "children": [
+          {
+            "item": 14,
+            "children": [
+              {
+                "item": 15,
+                "children": [
+                  {
+                    "item": 16,
+                    "children": [
+                      {
+                        "item": 31,
+                        "children": [],
+                        "leaf": {
+                          "GU": [
+                            "MDM"
+                          ]
+                        }
+                      }
+                    ],
+                    "leaf": null
+                  }
+                ],
+                "leaf": null
+              }
+            ],
+            "leaf": null
+          }
+        ],
+        "leaf": null
+      },
+      {
+        "item": 14,
+        "children": [
+          {
+            "item": 15,
+            "children": [
+              {
+                "item": 31,
+                "children": [],
+                "leaf": {
+                  "OD": [
+                    "MDM"
+                  ]
+                }
+              },
+              {
+                "item": 16,
+                "children": [
+                  {
+                    "item": 31,
+                    "children": [],
+                    "leaf": {
+                      "KE": [
+                        "OM"
+                      ]
+                    }
+                  }
+                ],
+                "leaf": null
+              }
+            ],
+            "leaf": null
+          }
+        ],
+        "leaf": null
+      }
+    ],
+    "leaf": {
+      "ANI": [
+        "OM"
+      ]
+    }
+  },
+  "4": {
+    "item": 4,
+    "children": [
+      {
+        "item": 5,
+        "children": [
+          {
+            "item": 14,
+            "children": [
+              {
+                "item": 15,
+                "children": [
+                  {
+                    "item": 16,
+                    "children": [
+                      {
+                        "item": 31,
+                        "children": [],
+                        "leaf": {
+                          "AP": [
+                            "OM"
+                          ]
+                        }
+                      }
+                    ],
+                    "leaf": null
+                  }
+                ],
+                "leaf": {
+                  "WB": [
+                    "OM"
+                  ]
+                }
+              }
+            ],
+            "leaf": null
+          }
+        ],
+        "leaf": null
+      }
+    ],
+    "leaf": null
+  },
+  "5": {
+    "item": 5,
+    "children": [
+      {
+        "item": 14,
+        "children": [
+          {
+            "item": 15,
+            "children": [
+              {
+                "item": 16,
+                "children": [
+                  {
+                    "item": 31,
+                    "children": [],
+                    "leaf": {
+                      "AP": [
+                        "OM"
+                      ]
+                    }
+                  }
+                ],
+                "leaf": null
+              }
+            ],
+            "leaf": {
+              "WB": [
+                "OM"
+              ]
+            }
+          }
+        ],
+        "leaf": null
+      }
+    ],
+    "leaf": null
+  }
+}
