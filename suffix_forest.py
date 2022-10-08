@@ -33,8 +33,7 @@ def build_sufix_forest(sfd_list):
             })
 
             for suffix in suffixes:
-                # if suffix.length == 1:
-                #     throw("Error: suffix has only leaf node and no data.")
+                assert len(suffix) > 1
 
                 if suffix[0] in h_tree.keys():
                     match(h_tree[suffix[0]], suffix)
@@ -44,13 +43,14 @@ def build_sufix_forest(sfd_list):
     return h_tree
 
 
-def match(h_node, suffix):  # called when h_node["item"] == suffix[0]
-    #assert h_node["item"] == suffix[0]
-    if (len(suffix) == 2):  # comparing leaf
+def match(h_node, suffix):
+    assert h_node["item"] == suffix[0]
+
+    if (len(suffix) == 2):  # suffix[1] is a leaf node
         if h_node["leaf"] == None:
-            h_node["leaf"] = suffix[1]  # { state: [type]}
+            h_node["leaf"] = suffix[1].copy()
         else:
-            # merge current leaf with the existing leaf
+            # merge the new leaf with the existing leaf
             tree_leaf = h_node["leaf"]
             state = list(suffix[1].keys())[0]
             type = suffix[1][state][0]
@@ -63,12 +63,14 @@ def match(h_node, suffix):  # called when h_node["item"] == suffix[0]
             else:
                 tree_leaf[state] = [type]
     else:
+        # suffix[1] will not be a leaf
+
         # matching suffix[1]
         for child in h_node["children"]:
             if child["item"] == suffix[1]:
                 match(child, suffix[1:])
                 return
-
+        # if no match is found, building h_node
         h_node["children"].append(build(suffix[1:]))
 
 
@@ -81,7 +83,7 @@ def build(suffix):
     }
 
     if len(suffix) == 2:
-        h_node["leaf"] = suffix[1]
+        h_node["leaf"] = suffix[1].copy()
     else:
         h_node["children"].append(build(suffix[1:]))
     return h_node
@@ -104,7 +106,7 @@ if __name__ =='__main__':
         "ANI": [2]
     }
 
-    forest = build_sufix_forest({"MDM": SFD_mdm, "OM" : SFD_om})
+    forest = build_sufix_forest({"MDM": SFD_mdm})
 
     from printing_util import generate_forest_image
     generate_forest_image(forest, "forest.png")
