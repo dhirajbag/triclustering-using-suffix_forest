@@ -102,3 +102,6 @@ if __name__ =='__main__':
     }
 
     forest = build_sufix_forest({"MDM": SFD_mdm, "OM" : SFD_om})
+
+    from printing_util import generate_forest_image
+    generate_forest_image(forest, "forest.png")
