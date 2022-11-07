@@ -1,11 +1,10 @@
-from lib2to3.pgen2.token import NEWLINE
-
+import copy
 
 def get_all_suffix(arr, leaf_obj):
     all_suffix = []
 
     for i in range(len(arr)):
-        all_suffix.append(get_suffix(arr, i, leaf_obj))
+        all_suffix.append(get_suffix(arr, i, copy.deepcopy(leaf_obj)))
 
     return all_suffix
 
@@ -48,7 +47,7 @@ def match(h_node, suffix):
 
     if (len(suffix) == 2):  # suffix[1] is a leaf node
         if h_node["leaf"] == None:
-            h_node["leaf"] = suffix[1].copy()
+            h_node["leaf"] = copy.deepcopy(suffix[1])
         else:
             # merge the new leaf with the existing leaf
             tree_leaf = h_node["leaf"]
@@ -83,7 +82,7 @@ def build(suffix):
     }
 
     if len(suffix) == 2:
-        h_node["leaf"] = suffix[1].copy()
+        h_node["leaf"] = copy.deepcopy(suffix[1])
     else:
         h_node["children"].append(build(suffix[1:]))
     return h_node
@@ -106,7 +105,7 @@ if __name__ =='__main__':
         "ANI": [2]
     }
 
-    forest = build_sufix_forest({"MDM": SFD_mdm})
+    forest = build_sufix_forest({"MDM": SFD_mdm, "OM" : SFD_om})
 
     from printing_util import generate_forest_image
     generate_forest_image(forest, "forest.png")
