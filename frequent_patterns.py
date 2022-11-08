@@ -19,7 +19,7 @@ def get_FCPs(h_tree):
             for pat2 in FCP:
                 if pat1 != pat2:
                     pat = pat1.intersection(pat2)
-                    if pat not in FCP and pat not in NFCP:
+                    if pat.size() > 0 and pat not in FCP and pat not in NFCP:
                         NFCP.append(pat)
         
         if len(NFCP) == 0:
@@ -47,7 +47,7 @@ def get_all_Patterns(h_tree) -> list:
     for key in list(h_tree.keys()):
         some_patterns = form_patterns(h_tree[key])
         for pattern in some_patterns:
-            if len(pattern.itemset) > 0:
+            if pattern.size() > 0:
                 all_patterns.append(pattern)
 
     return all_patterns
