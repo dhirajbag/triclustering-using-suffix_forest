@@ -59,6 +59,15 @@ class Rule:
             "AR_SB": AR_SB,
             "AR_PB": AR_PB
         }
+    
+    def __str__(self):
+        return "Rule(\n\t"+str(self._antecedent)+" => "+str(self._consequent)+"\n\tSupport: "+str(self.support())+"\n\tConfidence: "+str(self.confidence())+"\n)\n"
+
+
+
+if __name__ == "__main__":
+    rule = Rule(set([1,2, 3]), set([4, 5, 6]), dict(), 0.5)
+    print(str(rule))
 
 
 
