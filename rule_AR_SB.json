@@ -1,0 +1,553 @@
+[
+  {
+    "antecedent": [
+      3
+    ],
+    "consequent": [
+      1,
+      2,
+      3,
+      14,
+      15,
+      16,
+      31
+    ],
+    "support": 1,
+    "confidence": 1.0
+  },
+  {
+    "antecedent": [
+      31
+    ],
+    "consequent": [
+      16,
+      31
+    ],
+    "support": 5,
+    "confidence": 0.8333333333333334
+  },
+  {
+    "antecedent": [
+      31
+    ],
+    "consequent": [
+      1,
+      2,
+      14,
+      15,
+      31
+    ],
+    "support": 1,
+    "confidence": 0.16666666666666666
+  },
+  {
+    "antecedent": [
+      31
+    ],
+    "consequent": [
+      1,
+      2,
+      31,
+      14,
+      15
+    ],
+    "support": 2,
+    "confidence": 0.3333333333333333
+  },
+  {
+    "antecedent": [
+      31
+    ],
+    "consequent": [
+      1,
+      2,
+      3,
+      14,
+      15,
+      16,
+      31
+    ],
+    "support": 1,
+    "confidence": 0.16666666666666666
+  },
+  {
+    "antecedent": [
+      2
+    ],
+    "consequent": [
+      1,
+      2,
+      14,
+      15,
+      31
+    ],
+    "support": 1,
+    "confidence": 1.0
+  },
+  {
+    "antecedent": [
+      2
+    ],
+    "consequent": [
+      1,
+      2,
+      31,
+      14,
+      15
+    ],
+    "support": 2,
+    "confidence": 2.0
+  },
+  {
+    "antecedent": [
+      2
+    ],
+    "consequent": [
+      1,
+      2,
+      3,
+      14,
+      15,
+      16,
+      31
+    ],
+    "support": 1,
+    "confidence": 1.0
+  },
+  {
+    "antecedent": [
+      3
+    ],
+    "consequent": [
+      1,
+      2,
+      3,
+      14,
+      15,
+      16,
+      31
+    ],
+    "support": 1,
+    "confidence": 0.5
+  },
+  {
+    "antecedent": [
+      2
+    ],
+    "consequent": [
+      1,
+      2,
+      14,
+      15,
+      31
+    ],
+    "support": 1,
+    "confidence": 0.5
+  },
+  {
+    "antecedent": [
+      2
+    ],
+    "consequent": [
+      1,
+      2,
+      31,
+      14,
+      15
+    ],
+    "support": 2,
+    "confidence": 1.0
+  },
+  {
+    "antecedent": [
+      2
+    ],
+    "consequent": [
+      1,
+      2,
+      3,
+      14,
+      15,
+      16,
+      31
+    ],
+    "support": 1,
+    "confidence": 0.5
+  },
+  {
+    "antecedent": [
+      2
+    ],
+    "consequent": [
+      1,
+      2,
+      14,
+      15,
+      31
+    ],
+    "support": 1,
+    "confidence": 0.5
+  },
+  {
+    "antecedent": [
+      2
+    ],
+    "consequent": [
+      1,
+      2,
+      31,
+      14,
+      15
+    ],
+    "support": 2,
+    "confidence": 1.0
+  },
+  {
+    "antecedent": [
+      2
+    ],
+    "consequent": [
+      1,
+      2,
+      3,
+      14,
+      15,
+      16,
+      31
+    ],
+    "support": 1,
+    "confidence": 0.5
+  },
+  {
+    "antecedent": [
+      2
+    ],
+    "consequent": [
+      1,
+      2,
+      14,
+      15,
+      31
+    ],
+    "support": 1,
+    "confidence": 0.3333333333333333
+  },
+  {
+    "antecedent": [
+      2
+    ],
+    "consequent": [
+      1,
+      2,
+      31,
+      14,
+      15
+    ],
+    "support": 2,
+    "confidence": 0.6666666666666666
+  },
+  {
+    "antecedent": [
+      2
+    ],
+    "consequent": [
+      1,
+      2,
+      3,
+      14,
+      15,
+      16,
+      31
+    ],
+    "support": 1,
+    "confidence": 0.3333333333333333
+  },
+  {
+    "antecedent": [
+      16
+    ],
+    "consequent": [
+      1,
+      2,
+      3,
+      14,
+      15,
+      16,
+      31
+    ],
+    "support": 1,
+    "confidence": 0.2
+  },
+  {
+    "antecedent": [
+      14
+    ],
+    "consequent": [
+      4,
+      5,
+      14,
+      15
+    ],
+    "support": 1,
+    "confidence": 0.5
+  },
+  {
+    "antecedent": [
+      14
+    ],
+    "consequent": [
+      1,
+      2,
+      14,
+      15,
+      31
+    ],
+    "support": 1,
+    "confidence": 0.5
+  },
+  {
+    "antecedent": [
+      14
+    ],
+    "consequent": [
+      1,
+      2,
+      31,
+      14,
+      15
+    ],
+    "support": 2,
+    "confidence": 1.0
+  },
+  {
+    "antecedent": [
+      14
+    ],
+    "consequent": [
+      1,
+      2,
+      3,
+      14,
+      15,
+      16,
+      31
+    ],
+    "support": 1,
+    "confidence": 0.5
+  },
+  {
+    "antecedent": [
+      15
+    ],
+    "consequent": [
+      4,
+      5,
+      14,
+      15
+    ],
+    "support": 1,
+    "confidence": 0.5
+  },
+  {
+    "antecedent": [
+      15
+    ],
+    "consequent": [
+      1,
+      2,
+      14,
+      15,
+      31
+    ],
+    "support": 1,
+    "confidence": 0.5
+  },
+  {
+    "antecedent": [
+      15
+    ],
+    "consequent": [
+      1,
+      2,
+      31,
+      14,
+      15
+    ],
+    "support": 2,
+    "confidence": 1.0
+  },
+  {
+    "antecedent": [
+      15
+    ],
+    "consequent": [
+      1,
+      2,
+      3,
+      14,
+      15,
+      16,
+      31
+    ],
+    "support": 1,
+    "confidence": 0.5
+  },
+  {
+    "antecedent": [
+      14,
+      15
+    ],
+    "consequent": [
+      4,
+      5,
+      14,
+      15
+    ],
+    "support": 1,
+    "confidence": 0.5
+  },
+  {
+    "antecedent": [
+      14,
+      15
+    ],
+    "consequent": [
+      1,
+      2,
+      14,
+      15,
+      31
+    ],
+    "support": 1,
+    "confidence": 0.5
+  },
+  {
+    "antecedent": [
+      14,
+      15
+    ],
+    "consequent": [
+      1,
+      2,
+      31,
+      14,
+      15
+    ],
+    "support": 2,
+    "confidence": 1.0
+  },
+  {
+    "antecedent": [
+      14,
+      15
+    ],
+    "consequent": [
+      1,
+      2,
+      3,
+      14,
+      15,
+      16,
+      31
+    ],
+    "support": 1,
+    "confidence": 0.5
+  },
+  {
+    "antecedent": [
+      14,
+      15
+    ],
+    "consequent": [
+      4,
+      5,
+      14,
+      15
+    ],
+    "support": 1,
+    "confidence": 0.3333333333333333
+  },
+  {
+    "antecedent": [
+      14,
+      15
+    ],
+    "consequent": [
+      1,
+      2,
+      14,
+      15,
+      31
+    ],
+    "support": 1,
+    "confidence": 0.3333333333333333
+  },
+  {
+    "antecedent": [
+      14,
+      15
+    ],
+    "consequent": [
+      1,
+      2,
+      31,
+      14,
+      15
+    ],
+    "support": 2,
+    "confidence": 0.6666666666666666
+  },
+  {
+    "antecedent": [
+      14,
+      15
+    ],
+    "consequent": [
+      1,
+      2,
+      3,
+      14,
+      15,
+      16,
+      31
+    ],
+    "support": 1,
+    "confidence": 0.3333333333333333
+  },
+  {
+    "antecedent": [
+      1
+    ],
+    "consequent": [
+      1,
+      2,
+      3,
+      14,
+      15,
+      16,
+      31
+    ],
+    "support": 1,
+    "confidence": 1.0
+  },
+  {
+    "antecedent": [
+      1,
+      2,
+      31,
+      14,
+      15
+    ],
+    "consequent": [
+      1,
+      2,
+      3,
+      14,
+      15,
+      16,
+      31
+    ],
+    "support": 1,
+    "confidence": 0.5
+  }
+]
