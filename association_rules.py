@@ -27,7 +27,7 @@ class Rule:
     def is_exact(self) ->bool:
         return self._confidence == 1.0
     
-    def generate_rules(self, GEN, FCP) ->list:
+    def generate_rules(GEN, FCP) ->list:
         """Generates and returns a list of Association Rules from the
          given generator list GEN and frequent closed pattern list FCP"""
 
