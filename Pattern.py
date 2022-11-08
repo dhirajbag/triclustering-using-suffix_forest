@@ -2,7 +2,7 @@ import copy
 
 class Pattern:
     def __init__(self, itemset: set, object: dict):
-        self.itemset = itemset
+        self.itemset = set(itemset)
         self.object = copy.deepcopy(object)
     
     def __eq__(self, __o) -> bool:
@@ -20,6 +20,9 @@ class Pattern:
     
     def get_itemset(self) -> set:
         return self.itemset
+    
+    def get_copy(self):
+        return Pattern(self.itemset, self.object)
     
     def size(self) -> int:
         return len(self.itemset)
