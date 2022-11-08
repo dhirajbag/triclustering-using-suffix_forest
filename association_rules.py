@@ -1,5 +1,8 @@
 def get_support_count(support_object: dict) ->int:
-    return 0
+    count = 0
+    for key in list(support_object.keys()):
+        count += len(support_object[key])
+    return count
 
 class Rule:
     def __init__(self, antecedent_set = set(), consequent_set = set(), support_object = dict(), confidence = 0.0):
@@ -49,7 +52,7 @@ class Rule:
         
         for Fi in FCP:
             for Fj in FCP:
-                if(Fi.size() < Fj.size() and Fi.get_subset().issubset(Fj.get_subset())):
+                if(Fi.size() < Fj.size() and Fi.get_itemset().issubset(Fj.get_itemset())):
                     confidence = float(get_support_count(Fj.get_object()))/float(get_support_count(Fi.get_object()))
                     rule = Rule(Fi.get_itemset(), Fj.get_itemset(), Fj.get_object(), confidence)
                     AR_PB.append(rule)
@@ -62,6 +65,19 @@ class Rule:
     
     def __str__(self):
         return "Rule(\n\t"+str(self._antecedent)+" => "+str(self._consequent)+"\n\tSupport: "+str(self.support())+"\n\tConfidence: "+str(self.confidence())+"\n)\n"
+    
+    def toJSON(self, include_object = False) ->dict:
+        JSON = {
+            "antecedent": list(self.antecedent()),
+            "consequent": list(self.consequent()),
+            "support": self.support(),
+            "confidence": self.confidence()
+        }
+
+        if(include_object):
+            JSON["object"] = self._support_object
+        
+        return JSON
 
 
 
