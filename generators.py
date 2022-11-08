@@ -56,4 +56,8 @@ def comparator(pattern: Pattern) ->int:
 
 def get_all_subsets(subset: set, n: int) ->list:
     """Returns all possible subsets of size n from the given subset"""
-    return list(itertools.combinations(subset, n))
+    return [set(tpl) for tpl in itertools.combinations(subset, n)]
+
+
+if __name__ == "__main__":
+    print(get_all_subsets(set([1, 2, 3, 4, 5]), 3))
