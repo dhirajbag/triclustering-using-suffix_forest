@@ -50,7 +50,7 @@ def match(h_node, suffix):
             h_node["leaf"] = copy.deepcopy(suffix[1])
         else:
             # merge the new leaf with the existing leaf
-            tree_leaf = h_node["leaf"]
+            tree_leaf = h_node["leaf"] #Note: reference (alias) to h_node["leaf"] is used
             state = list(suffix[1].keys())[0]
             type = suffix[1][state][0]
 
