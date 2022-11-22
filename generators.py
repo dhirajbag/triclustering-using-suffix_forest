@@ -40,6 +40,7 @@ def get_generators(FCP: list):
                     #TODO: Is this the correct Object List for the generators ?
                     GEN.append([Pattern(subset, pattern.get_object()), pattern])
                     found_gen = True
+                    #TODO: Should we break here and not test other subsets ?
             generator_size += 1
 
         if found_gen == False:
