@@ -1,76 +1,10 @@
 [
   {
     "antecedent": [
-      3
-    ],
-    "consequent": [
-      3,
-      14,
-      15,
-      16,
-      31
-    ],
-    "support": 3,
-    "confidence": 0.75,
-    "object": {
-      "AP": [
-        "MDM",
-        "OM"
-      ],
-      "GU": [
-        "MDM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      3
-    ],
-    "consequent": [
-      3,
-      4,
-      5,
-      14,
-      15,
-      16,
-      31
-    ],
-    "support": 1,
-    "confidence": 0.25,
-    "object": {
-      "AP": [
-        "OM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      3
-    ],
-    "consequent": [
-      1,
-      2,
-      3,
-      14,
-      15,
-      16,
-      31
-    ],
-    "support": 1,
-    "confidence": 0.25,
-    "object": {
-      "GU": [
-        "MDM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
       31
     ],
     "consequent": [
-      16,
-      31
+      16
     ],
     "support": 5,
     "confidence": 0.8333333333333334,
@@ -81,12 +15,12 @@
       ],
       "GU": [
         "MDM"
-      ],
-      "KE": [
-        "OM"
       ],
       "ANI": [
         "MDM"
+      ],
+      "KE": [
+        "OM"
       ]
     }
   },
@@ -95,7 +29,6 @@
       31
     ],
     "consequent": [
-      31,
       14,
       15
     ],
@@ -109,11 +42,11 @@
       "GU": [
         "MDM"
       ],
-      "KE": [
-        "OM"
-      ],
       "OD": [
         "MDM"
+      ],
+      "KE": [
+        "OM"
       ]
     }
   },
@@ -123,7 +56,6 @@
     ],
     "consequent": [
       16,
-      31,
       14,
       15
     ],
@@ -148,128 +80,18 @@
     ],
     "consequent": [
       2,
-      15,
       14,
-      31
+      15
     ],
     "support": 3,
     "confidence": 0.5,
     "object": {
-      "GU": [
-        "MDM"
-      ],
       "OD": [
         "MDM"
       ],
       "KE": [
         "OM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      31
-    ],
-    "consequent": [
-      3,
-      14,
-      15,
-      16,
-      31
-    ],
-    "support": 3,
-    "confidence": 0.5,
-    "object": {
-      "AP": [
-        "MDM",
-        "OM"
       ],
-      "GU": [
-        "MDM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      31
-    ],
-    "consequent": [
-      1,
-      2,
-      14,
-      15,
-      31
-    ],
-    "support": 2,
-    "confidence": 0.3333333333333333,
-    "object": {
-      "GU": [
-        "MDM"
-      ],
-      "OD": [
-        "MDM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      31
-    ],
-    "consequent": [
-      2,
-      14,
-      15,
-      16,
-      31
-    ],
-    "support": 2,
-    "confidence": 0.3333333333333333,
-    "object": {
-      "GU": [
-        "MDM"
-      ],
-      "KE": [
-        "OM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      31
-    ],
-    "consequent": [
-      3,
-      4,
-      5,
-      14,
-      15,
-      16,
-      31
-    ],
-    "support": 1,
-    "confidence": 0.16666666666666666,
-    "object": {
-      "AP": [
-        "OM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      31
-    ],
-    "consequent": [
-      1,
-      2,
-      3,
-      14,
-      15,
-      16,
-      31
-    ],
-    "support": 1,
-    "confidence": 0.16666666666666666,
-    "object": {
       "GU": [
         "MDM"
       ]
@@ -280,7 +102,6 @@
       2
     ],
     "consequent": [
-      2,
       15,
       14,
       31
@@ -288,292 +109,12 @@
     "support": 3,
     "confidence": 0.75,
     "object": {
-      "GU": [
-        "MDM"
-      ],
       "OD": [
         "MDM"
       ],
       "KE": [
         "OM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      2
-    ],
-    "consequent": [
-      1,
-      2,
-      14,
-      15,
-      31
-    ],
-    "support": 2,
-    "confidence": 0.5,
-    "object": {
-      "GU": [
-        "MDM"
       ],
-      "OD": [
-        "MDM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      2
-    ],
-    "consequent": [
-      2,
-      14,
-      15,
-      16,
-      31
-    ],
-    "support": 2,
-    "confidence": 0.5,
-    "object": {
-      "GU": [
-        "MDM"
-      ],
-      "KE": [
-        "OM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      2
-    ],
-    "consequent": [
-      1,
-      2,
-      3,
-      14,
-      15,
-      16,
-      31
-    ],
-    "support": 1,
-    "confidence": 0.25,
-    "object": {
-      "GU": [
-        "MDM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      14,
-      15
-    ],
-    "consequent": [
-      31,
-      14,
-      15
-    ],
-    "support": 5,
-    "confidence": 0.8333333333333334,
-    "object": {
-      "AP": [
-        "MDM",
-        "OM"
-      ],
-      "GU": [
-        "MDM"
-      ],
-      "KE": [
-        "OM"
-      ],
-      "OD": [
-        "MDM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      14,
-      15
-    ],
-    "consequent": [
-      16,
-      31,
-      14,
-      15
-    ],
-    "support": 4,
-    "confidence": 0.6666666666666666,
-    "object": {
-      "AP": [
-        "MDM",
-        "OM"
-      ],
-      "GU": [
-        "MDM"
-      ],
-      "KE": [
-        "OM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      14,
-      15
-    ],
-    "consequent": [
-      4,
-      5,
-      14,
-      15
-    ],
-    "support": 2,
-    "confidence": 0.3333333333333333,
-    "object": {
-      "AP": [
-        "OM"
-      ],
-      "WB": [
-        "OM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      14,
-      15
-    ],
-    "consequent": [
-      2,
-      15,
-      14,
-      31
-    ],
-    "support": 3,
-    "confidence": 0.5,
-    "object": {
-      "GU": [
-        "MDM"
-      ],
-      "OD": [
-        "MDM"
-      ],
-      "KE": [
-        "OM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      14,
-      15
-    ],
-    "consequent": [
-      3,
-      14,
-      15,
-      16,
-      31
-    ],
-    "support": 3,
-    "confidence": 0.5,
-    "object": {
-      "AP": [
-        "MDM",
-        "OM"
-      ],
-      "GU": [
-        "MDM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      14,
-      15
-    ],
-    "consequent": [
-      1,
-      2,
-      14,
-      15,
-      31
-    ],
-    "support": 2,
-    "confidence": 0.3333333333333333,
-    "object": {
-      "GU": [
-        "MDM"
-      ],
-      "OD": [
-        "MDM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      14,
-      15
-    ],
-    "consequent": [
-      2,
-      14,
-      15,
-      16,
-      31
-    ],
-    "support": 2,
-    "confidence": 0.3333333333333333,
-    "object": {
-      "GU": [
-        "MDM"
-      ],
-      "KE": [
-        "OM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      14,
-      15
-    ],
-    "consequent": [
-      3,
-      4,
-      5,
-      14,
-      15,
-      16,
-      31
-    ],
-    "support": 1,
-    "confidence": 0.16666666666666666,
-    "object": {
-      "AP": [
-        "OM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      14,
-      15
-    ],
-    "consequent": [
-      1,
-      2,
-      3,
-      14,
-      15,
-      16,
-      31
-    ],
-    "support": 1,
-    "confidence": 0.16666666666666666,
-    "object": {
       "GU": [
         "MDM"
       ]
@@ -585,8 +126,6 @@
       31
     ],
     "consequent": [
-      16,
-      31,
       14,
       15
     ],
@@ -607,18 +146,14 @@
   },
   {
     "antecedent": [
-      16,
-      31
+      14,
+      15
     ],
     "consequent": [
-      3,
-      14,
-      15,
-      16,
       31
     ],
-    "support": 3,
-    "confidence": 0.6,
+    "support": 5,
+    "confidence": 0.8333333333333334,
     "object": {
       "AP": [
         "MDM",
@@ -626,24 +161,31 @@
       ],
       "GU": [
         "MDM"
+      ],
+      "OD": [
+        "MDM"
+      ],
+      "KE": [
+        "OM"
       ]
     }
   },
   {
     "antecedent": [
-      16,
-      31
+      14,
+      15
     ],
     "consequent": [
-      2,
-      14,
-      15,
       16,
       31
     ],
-    "support": 2,
-    "confidence": 0.4,
+    "support": 4,
+    "confidence": 0.6666666666666666,
     "object": {
+      "AP": [
+        "MDM",
+        "OM"
+      ],
       "GU": [
         "MDM"
       ],
@@ -654,43 +196,22 @@
   },
   {
     "antecedent": [
-      16,
-      31
-    ],
-    "consequent": [
-      3,
-      4,
-      5,
       14,
-      15,
-      16,
-      31
-    ],
-    "support": 1,
-    "confidence": 0.2,
-    "object": {
-      "AP": [
-        "OM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      16,
-      31
+      15
     ],
     "consequent": [
-      1,
       2,
-      3,
-      14,
-      15,
-      16,
       31
     ],
-    "support": 1,
-    "confidence": 0.2,
+    "support": 3,
+    "confidence": 0.5,
     "object": {
+      "OD": [
+        "MDM"
+      ],
+      "KE": [
+        "OM"
+      ],
       "GU": [
         "MDM"
       ]
@@ -703,10 +224,7 @@
       15
     ],
     "consequent": [
-      16,
-      31,
-      14,
-      15
+      16
     ],
     "support": 4,
     "confidence": 0.8,
@@ -730,436 +248,17 @@
       15
     ],
     "consequent": [
-      2,
-      15,
-      14,
-      31
+      2
     ],
     "support": 3,
     "confidence": 0.6,
     "object": {
-      "GU": [
-        "MDM"
-      ],
       "OD": [
         "MDM"
       ],
       "KE": [
         "OM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      31,
-      14,
-      15
-    ],
-    "consequent": [
-      3,
-      14,
-      15,
-      16,
-      31
-    ],
-    "support": 3,
-    "confidence": 0.6,
-    "object": {
-      "AP": [
-        "MDM",
-        "OM"
       ],
-      "GU": [
-        "MDM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      31,
-      14,
-      15
-    ],
-    "consequent": [
-      1,
-      2,
-      14,
-      15,
-      31
-    ],
-    "support": 2,
-    "confidence": 0.4,
-    "object": {
-      "GU": [
-        "MDM"
-      ],
-      "OD": [
-        "MDM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      31,
-      14,
-      15
-    ],
-    "consequent": [
-      2,
-      14,
-      15,
-      16,
-      31
-    ],
-    "support": 2,
-    "confidence": 0.4,
-    "object": {
-      "GU": [
-        "MDM"
-      ],
-      "KE": [
-        "OM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      31,
-      14,
-      15
-    ],
-    "consequent": [
-      3,
-      4,
-      5,
-      14,
-      15,
-      16,
-      31
-    ],
-    "support": 1,
-    "confidence": 0.2,
-    "object": {
-      "AP": [
-        "OM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      31,
-      14,
-      15
-    ],
-    "consequent": [
-      1,
-      2,
-      3,
-      14,
-      15,
-      16,
-      31
-    ],
-    "support": 1,
-    "confidence": 0.2,
-    "object": {
-      "GU": [
-        "MDM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      16,
-      31,
-      14,
-      15
-    ],
-    "consequent": [
-      3,
-      14,
-      15,
-      16,
-      31
-    ],
-    "support": 3,
-    "confidence": 0.75,
-    "object": {
-      "AP": [
-        "MDM",
-        "OM"
-      ],
-      "GU": [
-        "MDM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      16,
-      31,
-      14,
-      15
-    ],
-    "consequent": [
-      2,
-      14,
-      15,
-      16,
-      31
-    ],
-    "support": 2,
-    "confidence": 0.5,
-    "object": {
-      "GU": [
-        "MDM"
-      ],
-      "KE": [
-        "OM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      16,
-      31,
-      14,
-      15
-    ],
-    "consequent": [
-      3,
-      4,
-      5,
-      14,
-      15,
-      16,
-      31
-    ],
-    "support": 1,
-    "confidence": 0.25,
-    "object": {
-      "AP": [
-        "OM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      16,
-      31,
-      14,
-      15
-    ],
-    "consequent": [
-      1,
-      2,
-      3,
-      14,
-      15,
-      16,
-      31
-    ],
-    "support": 1,
-    "confidence": 0.25,
-    "object": {
-      "GU": [
-        "MDM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      4,
-      5,
-      14,
-      15
-    ],
-    "consequent": [
-      3,
-      4,
-      5,
-      14,
-      15,
-      16,
-      31
-    ],
-    "support": 1,
-    "confidence": 0.5,
-    "object": {
-      "AP": [
-        "OM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      2,
-      15,
-      14,
-      31
-    ],
-    "consequent": [
-      1,
-      2,
-      14,
-      15,
-      31
-    ],
-    "support": 2,
-    "confidence": 0.6666666666666666,
-    "object": {
-      "GU": [
-        "MDM"
-      ],
-      "OD": [
-        "MDM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      2,
-      15,
-      14,
-      31
-    ],
-    "consequent": [
-      2,
-      14,
-      15,
-      16,
-      31
-    ],
-    "support": 2,
-    "confidence": 0.6666666666666666,
-    "object": {
-      "GU": [
-        "MDM"
-      ],
-      "KE": [
-        "OM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      2,
-      15,
-      14,
-      31
-    ],
-    "consequent": [
-      1,
-      2,
-      3,
-      14,
-      15,
-      16,
-      31
-    ],
-    "support": 1,
-    "confidence": 0.3333333333333333,
-    "object": {
-      "GU": [
-        "MDM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      3,
-      14,
-      15,
-      16,
-      31
-    ],
-    "consequent": [
-      3,
-      4,
-      5,
-      14,
-      15,
-      16,
-      31
-    ],
-    "support": 1,
-    "confidence": 0.3333333333333333,
-    "object": {
-      "AP": [
-        "OM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      3,
-      14,
-      15,
-      16,
-      31
-    ],
-    "consequent": [
-      1,
-      2,
-      3,
-      14,
-      15,
-      16,
-      31
-    ],
-    "support": 1,
-    "confidence": 0.3333333333333333,
-    "object": {
-      "GU": [
-        "MDM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      1,
-      2,
-      14,
-      15,
-      31
-    ],
-    "consequent": [
-      1,
-      2,
-      3,
-      14,
-      15,
-      16,
-      31
-    ],
-    "support": 1,
-    "confidence": 0.5,
-    "object": {
-      "GU": [
-        "MDM"
-      ]
-    }
-  },
-  {
-    "antecedent": [
-      2,
-      14,
-      15,
-      16,
-      31
-    ],
-    "consequent": [
-      1,
-      2,
-      3,
-      14,
-      15,
-      16,
-      31
-    ],
-    "support": 1,
-    "confidence": 0.5,
-    "object": {
       "GU": [
         "MDM"
       ]
