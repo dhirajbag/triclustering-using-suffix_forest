@@ -1,13 +1,9 @@
-def get_support_count(support_object: dict) ->int:
-    count = 0
-    for key in list(support_object.keys()):
-        count += len(support_object[key])
-    return count
+from util import get_support_count
 
 class Rule:
     def __init__(self, antecedent_set = set(), consequent_set = set(), support_object = dict(), confidence = 0.0):
         self._antecedent = antecedent_set
-        self._consequent = consequent_set
+        self._consequent = (consequent_set - antecedent_set)
         self._support_object = support_object
         self._support = get_support_count(support_object)
         self._confidence = confidence
@@ -79,11 +75,6 @@ class Rule:
         
         return JSON
 
-
-
-if __name__ == "__main__":
-    rule = Rule(set([1,2, 3]), set([4, 5, 6]), dict(), 0.5)
-    print(str(rule))
 
 
 
