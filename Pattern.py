@@ -1,4 +1,5 @@
 import copy
+from util import get_support_count
 
 class Pattern:
     def __init__(self, itemset: set, object: dict):
@@ -78,6 +79,20 @@ class Pattern:
 
     def __str__(self): 
         return "Pattern(\n\titemset: "+str(self.itemset)+"\n\tobject: "+str(self.object)+"\n)"
+    
+    def support_count(self):
+        return get_support_count(self.object)
+        
+    def toJSON(self, include_object = False) ->dict:
+        JSON = {
+            "itemset": list(self.itemset),
+            "support": get_support_count(self.object)
+        }
+
+        if(include_object):
+            JSON["object"] = self.object
+        
+        return JSON
 
 
 if __name__ == "__main__":
