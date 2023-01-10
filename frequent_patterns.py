@@ -2,11 +2,11 @@ import copy
 from Pattern import Pattern
 
 
-def get_FCPs(h_tree):
+def get_FCPs(h_tree, min_support_count = 1):
     """Returns all the Frequent Closed Patterns from the suffix forest h_tree"""
 
     all_patterns = get_all_Patterns(h_tree)
-    FCP = [ pattern for pattern in all_patterns if pattern.is_closed(all_patterns)]
+    FCP = [pattern for pattern in all_patterns if pattern.is_closed(all_patterns)]
 
     # Handled the case when the intersection itemset is already present in FCP
     new_may_exist = True
@@ -50,7 +50,8 @@ def get_FCPs(h_tree):
                 FCP[patch["idx"]].merge_leaf(patch["leaf"])
             for pat in NFCP:
                 FCP.append(pat)
-    
+
+    FCP = [fcp for fcp in FCP if fcp.support_count() >= min_support_count]
     return FCP
 
 
@@ -70,7 +71,8 @@ def get_all_Patterns(h_tree) -> list:
                         already_present = True
                         all_patterns[i].merge_leaf(pattern.get_object())
                         break
-
+                
+                assert already_present == False #TODO: remove
                 if not already_present:
                     all_patterns.append(pattern)           
     return all_patterns
@@ -86,13 +88,15 @@ def form_patterns(h_node):
     for child in h_node["children"]:
         partial_patterns = form_patterns(child)
         for pattern in partial_patterns:
-            new_pattern = copy.deepcopy(pattern)
-            new_pattern.add_item(h_node["item"])
+            # new_pattern = copy.deepcopy(pattern)
+            # new_pattern.add_item(h_node["item"])
+            # result.append(pattern)
+            # result.append(new_pattern)
+            pattern.add_item(h_node["item"])
             result.append(pattern)
-            result.append(new_pattern)
     
     if h_node["leaf"] != None:
-        result.append(Pattern(set(), h_node["leaf"]))
+        # result.append(Pattern(set(), h_node["leaf"]))
         result.append(Pattern(set([h_node["item"]]), h_node["leaf"]))
 
     return result
