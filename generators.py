@@ -12,7 +12,8 @@ from Pattern import Pattern
 
 def get_generators(FCP: list):
     """Returns the list of generators from the FCP list"""
-
+    print("Finding the generators")
+    
     FCP.sort(key = comparator)
     GEN = []
     
