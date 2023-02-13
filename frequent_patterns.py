@@ -5,6 +5,8 @@ from Pattern import Pattern
 def get_FCPs(h_tree, min_support_count = 1):
     """Returns all the Frequent Closed Patterns from the suffix forest h_tree"""
 
+    print("Generating FCPs")
+
     all_patterns = get_all_Patterns(h_tree)
     FCP = [pattern for pattern in all_patterns if pattern.is_closed(all_patterns)]
 
@@ -52,6 +54,8 @@ def get_FCPs(h_tree, min_support_count = 1):
                 FCP.append(pat)
 
     FCP = [fcp for fcp in FCP if fcp.support_count() >= min_support_count]
+
+    print(f"Total {len(FCP)} FCPs generated.")
     return FCP
 
 
@@ -88,15 +92,10 @@ def form_patterns(h_node):
     for child in h_node["children"]:
         partial_patterns = form_patterns(child)
         for pattern in partial_patterns:
-            # new_pattern = copy.deepcopy(pattern)
-            # new_pattern.add_item(h_node["item"])
-            # result.append(pattern)
-            # result.append(new_pattern)
             pattern.add_item(h_node["item"])
             result.append(pattern)
     
     if h_node["leaf"] != None:
-        # result.append(Pattern(set(), h_node["leaf"]))
         result.append(Pattern(set([h_node["item"]]), h_node["leaf"]))
 
     return result
