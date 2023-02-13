@@ -18,6 +18,9 @@ class Pattern:
     
     def get_object(self) -> dict:
         return copy.deepcopy(self.object)
+
+    def get_object_ref(self) ->dict:
+        return self.object
     
     def get_itemset(self) -> set:
         return self.itemset
@@ -74,13 +77,16 @@ class Pattern:
                         False
         return True
 
+    def get_object_as_line(self):
+        return "<Not implemented>"
+        
     def has_same_object(self, other):
         return self.is_object_subset(self.object, other.get_object()) and self.is_object_subset(other.get_object(), self.object)
 
     def __str__(self): 
         return "Pattern(\n\titemset: "+str(self.itemset)+"\n\tobject: "+str(self.object)+"\n)"
     
-    def support_count(self):
+    def support_count(self) ->int:
         return get_support_count(self.object)
         
     def toJSON(self, include_object = False) ->dict:
