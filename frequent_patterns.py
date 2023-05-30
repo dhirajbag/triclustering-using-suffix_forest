@@ -4,9 +4,6 @@ from Pattern import Pattern
 
 def get_FCPs(h_tree, min_support_count = 1):
     """Returns all the Frequent Closed Patterns from the suffix forest h_tree"""
-
-    print("Generating FCPs")
-
     all_patterns = get_all_Patterns(h_tree)
     FCP = [pattern for pattern in all_patterns if pattern.is_closed(all_patterns)]
 
@@ -54,11 +51,7 @@ def get_FCPs(h_tree, min_support_count = 1):
                 FCP.append(pat)
 
     FCP = [fcp for fcp in FCP if fcp.support_count() >= min_support_count]
-
-    print(f"Total {len(FCP)} FCPs generated.")
     return FCP
-
-
 
 def get_all_Patterns(h_tree) -> list:
     """ Returns all possible item sets along with their object lists """
@@ -85,8 +78,6 @@ def form_patterns(h_node):
     """Returns all possible item sets along with their object lists
      by traversing the input h_node """
     
-    # CANNOT directly return if we encounter a leaf
-    # The the current node may have both a leaf and children
     result = []
 
     for child in h_node["children"]:
@@ -99,37 +90,4 @@ def form_patterns(h_node):
         result.append(Pattern(set([h_node["item"]]), h_node["leaf"]))
 
     return result
-    
-
-if __name__ == "__main__":
-    h_tree = {
-        1 : {
-            "item" : 1,
-            "leaf" : None,
-            "children" : [
-                {
-                    "item" : 2,
-                    "leaf" : {"AP" : ["MDM", "OM"]},
-                    "children" : []
-                },
-                {
-                    "item" : 3,
-                    "leaf" : {"AP" : ["OM", "MDM"]},
-                    "children" : []
-                }
-            ]
-        }
-    }
-
-    patterns = get_all_Patterns(h_tree)
-    for pattern in patterns:
-        print (pattern)
-    # from json import dumps
-    # with open("patterns.json", "w") as outputfile:
-    #     outputfile.write(dumps(patterns, indent=2))
-
-    if h_tree[1]["children"][0]["leaf"] == h_tree[1]["children"][1]["leaf"]:
-        print ("Same")
-    else:
-        print("Different")
 
