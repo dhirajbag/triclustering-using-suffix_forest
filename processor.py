@@ -15,6 +15,7 @@ class Processor:
         self.ITEM_LIST_ATTR = 'ITEM_LIST'
         self.SPLIT_ATTR = 'SPLIT'
         self.min_sup_count = 1
+        self.min_sup_count_number_table = 1
         self.min_confidence = 0.0
         self.number_table = None
         self.item_name_table = None
@@ -46,6 +47,7 @@ class Processor:
         print(f'Output directory is set to {self.output_directory_path}')
 
     def process(self,
+                min_support_percentage_number_table = 0.0,
                  min_support_count = 1,
                    min_confidence = 0.0,
                      produce_intermediate_imgs = False,
@@ -56,8 +58,14 @@ class Processor:
         
         if min_support_count > 1:
                 self.set_minmum_support_count(min_support_count)
+                self.min_sup_count_number_table = min_support_count
+
         if min_confidence > 0.0:
             self.set_minimum_conidence(min_confidence)
+        
+        if min_support_percentage_number_table > 0.0:
+            self.min_sup_count_number_table = math.ceil(len(self.df)*min_support_percentage_number_table*0.01)
+
 
         self._form_number_table()
 
@@ -72,7 +80,7 @@ class Processor:
         self.extract_fcp_list()
         self.find_generator_closure_pairs()
         self.generate_files()
-        print('process completed')
+        print('process completed')  
 
     def generate_files(self):
         self.produce_number_table_csv(f'{self.filename}.number_table')
@@ -112,7 +120,7 @@ class Processor:
                 else:
                     support[item] += 1
 
-        items = [ (item, count) for (item, count) in support.items() if count >= self.min_sup_count]
+        items = [ (item, count) for (item, count) in support.items() if count >= self.min_sup_count_number_table]
         items = sorted(items, key = lambda x: x[1])
 
         number_table = dict()
