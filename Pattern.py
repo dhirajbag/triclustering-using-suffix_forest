@@ -78,7 +78,7 @@ class Pattern:
         return True
 
     def get_object_as_line(self):
-        return "<Not implemented>"
+        return str(self.object)
         
     def has_same_object(self, other):
         return self.is_object_subset(self.object, other.get_object()) and self.is_object_subset(other.get_object(), self.object)
