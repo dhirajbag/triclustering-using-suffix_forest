@@ -1,19 +1,10 @@
-# Finds generators from the list of FCPs
-# Input: List of FCPs
-# Output: List of generators
-
-
-# A Generator element g has two parts:
-# g[0] is the generator pattern
-# g[1] is the closure pattern
-
 import itertools
 from Pattern import Pattern
+from util import get_support_count
+import pandas as pd
 
 def get_generators(FCP: list):
     """Returns the list of generators from the FCP list"""
-    print("Finding the generators")
-    
     FCP.sort(key = comparator)
     GEN = []
     
@@ -46,7 +37,6 @@ def get_generators(FCP: list):
 
         if found_gen == False:
             GEN.append([pattern, pattern.get_copy()])
-    
     return GEN
 
 
@@ -60,6 +50,22 @@ def get_all_subsets(subset: set, n: int) ->list:
     """Returns all possible subsets of size n from the given subset"""
     return [set(tpl) for tpl in itertools.combinations(subset, n)]
 
-
-if __name__ == "__main__":
-    print(get_all_subsets(set([1, 2, 3, 4, 5]), 3))
+def write_generators_to_csv(output_dir: str, filename: str,  GENs: list, min_sup_count, include_object = False):
+    data = list()
+    for [gen, clos] in GENs:
+        generator = str(list(gen.get_itemset()))
+        closure = str(list(clos.get_itemset()))
+        if include_object:
+            support_object = clos.get_object_as_line()
+        support_count = get_support_count(clos.get_object())
+        if include_object:
+            data.append([generator, closure, support_count, support_object])
+        else:
+            data.append([generator, closure, support_count])
+    if include_object:
+        df = pd.DataFrame(data, columns = ["Generator", "Closure", "Support Count","Support Object"])
+    else:
+        df = pd.DataFrame(data, columns = ["Generator", "Closure", "Support Count"])
+    filename = f'{output_dir}/{filename}.ms={min_sup_count}.csv'
+    df.to_csv(filename, index=False)
+    print(f"Created file {filename}")
