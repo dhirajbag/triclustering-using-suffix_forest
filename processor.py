@@ -32,6 +32,7 @@ class Processor:
                                item_list_attribute: str,
                                  split_attribute: str):
         self.df = pd.read_csv(os.path.join(input_file_dir, input_file_name))
+        self.df = self.df[[oid_attribute, item_list_attribute, split_attribute]]
         self.df = self.df.rename(columns={oid_attribute: self.OID_ATTR})
         self.df = self.df.rename(columns={item_list_attribute: self.ITEM_LIST_ATTR})
         self.df = self.df.rename(columns={split_attribute: self.SPLIT_ATTR})
