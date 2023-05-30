@@ -1,4 +1,6 @@
 import copy
+from printing_util import generate_forest_image
+import json
 
 def get_all_suffix(arr, leaf_obj):
     all_suffix = []
@@ -20,9 +22,10 @@ def get_suffix(arr, idx, leaf_obj):
     return suffix
 
 
-def build_sufix_forest(sfd_list):
-    # HTree
+def build_sufix_forest(sfd_list, produce_intermediate_images = False, produce_final_image = False, output_dir = ".", filename = ""):
     h_tree = {}
+    count = 1
+    image_path = f'{output_dir}/{filename}'
 
     for type in sfd_list.keys():
         SFD = sfd_list[type]
@@ -38,7 +41,12 @@ def build_sufix_forest(sfd_list):
                     match(h_tree[suffix[0]], suffix)
                 else:
                     h_tree[suffix[0]] = build(suffix)
+                if(produce_intermediate_images):
+                    generate_forest_image(h_tree, f'{image_path}.itermediate{count}.png')
+                    count += 1
 
+    if(produce_final_image):               
+        generate_forest_image(h_tree, f'{image_path}.final.png')
     return h_tree
 
 
@@ -88,28 +96,7 @@ def build(suffix):
     return h_node
 
 
-if __name__ =='__main__':
-
-    SFD_mdm = {
-        "AP": [3, 14, 15, 16, 31],
-        "GU": [1, 2, 3, 14, 15, 16, 31],
-        "OD": [1, 2, 14, 15, 31],
-        "ANI": [16, 31]
-    }
-
-    SFD_om = {
-        "AP": [3, 4, 5, 14,15, 16, 31],
-        "MA": [3],
-        "KE": [2, 14, 15, 16, 31],
-        "WB": [4, 5, 14, 15],
-        "ANI": [2]
-    }
-
-    forest = build_sufix_forest({"MDM": SFD_mdm, "OM" : SFD_om})
-
-    from printing_util import generate_forest_image
-    generate_forest_image(forest, "forest.png")
-
-    from json import dumps
-    with open("forest.json", "w") as outputfile:
-        outputfile.write(dumps(forest, indent=2))
+def produce_forest_json(path_to_dir: str, filename: str, h_tree: dict, min_sup_count: int):
+    filepath = f'{path_to_dir}/{filename}.ms={min_sup_count}.encoded.json'
+    with open(filepath, "w") as file:
+        file.write(json.dumps(h_tree, indent=2))
