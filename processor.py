@@ -87,7 +87,8 @@ class Processor:
                             self.min_confidence,
                             produce_csv = True,
                             produce_json = True)
-        self.produce_generators_csv()
+        self.produce_generators_csv(f'{self.filename}.generators',
+                                     include_object = True)
 
     def set_output_directory_path(self, output_dir_path):
         self.output_directory_path = output_dir_path
@@ -135,7 +136,7 @@ class Processor:
         for (item_name, item_number) in self.number_table.items():
             data.append([item_name, item_number])
         df = pd.DataFrame(data, columns = ['Item Name', "Item Number"])
-        df.to_csv(f'{self.output_directory_path}/{filename}.ms={self.min_sup_count}.csv')
+        df.to_csv(f'{self.output_directory_path}/{filename}.ms={self.min_sup_count}.csv', index=False)
         print(f'Created file {self.output_directory_path}/{filename}.ms={self.min_sup_count}.csv')
 
     def get_sfd_list(self, create_datesets = False):
@@ -214,8 +215,12 @@ class Processor:
                                   self.fcp_list,
                                   min_sup_count_cluster)
 
-    def produce_generators_csv(self):
-        write_generators_to_csv(self.output_directory_path, self.genarator_closure_pairs)
+    def produce_generators_csv(self, filename: str, include_object: bool):
+        write_generators_to_csv(self.output_directory_path,
+                                 filename,
+                                   self.genarator_closure_pairs,
+                                     self.min_sup_count,
+                                       include_object)
     
 
 
